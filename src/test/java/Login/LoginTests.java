@@ -22,12 +22,12 @@ public class LoginTests {
         //get page title
         System.out.println(driver.getTitle());
         //locate username field
-        driver.findElement(By.id("username")).sendKeys("Fiyingirl19");
+        driver.findElement(By.id("username")).sendKeys("");
         //locate password field
-        driver.findElement(By.id("password")).sendKeys("wonderful");
+        driver.findElement(By.id("password")).sendKeys("");
         //Click on the sign in button
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/button")).click();
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         //close the browser after test
         driver.quit();
     }
